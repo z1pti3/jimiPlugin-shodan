@@ -1,0 +1,213 @@
+{
+   "name": "shodan",
+   "author": "z1p",
+   "version": 0.3,
+   "categories": [],
+   "description": "",
+   "icon": null,
+   "requirements": {
+      "jimi_min_version": null,
+      "jimi_max_version": null,
+      "plugins": []
+   },
+   "collections": {},
+   "triggers": {},
+   "actions": {
+      "shodanSearch": {
+         "display_name": "shodanSearch",
+         "className": "_shodanSearch",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "queryString",
+               "schema_value": "queryString",
+               "type": "input",
+               "label": "queryString",
+               "description": ""
+            },
+            {
+               "schema_item": "facetsString",
+               "schema_value": "facetsString",
+               "type": "input",
+               "label": "facetsString",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "shodanGetHostByIP": {
+         "display_name": "shodanGetHostByIP",
+         "className": "_shodanGetHostByIP",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "ip",
+               "schema_value": "ip",
+               "type": "input",
+               "label": "ip",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "shodanDomainLookup": {
+         "display_name": "shodanDomainLookup",
+         "className": "_shodanDomainLookup",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "domain",
+               "schema_value": "domain",
+               "type": "input",
+               "label": "domain",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "shodanReverseLookup": {
+         "display_name": "shodanReverseLookup",
+         "className": "_shodanReverseLookup",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "ip",
+               "schema_value": "ip",
+               "type": "input",
+               "label": "ip",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      }
+   },
+   "settings": {}
+}
